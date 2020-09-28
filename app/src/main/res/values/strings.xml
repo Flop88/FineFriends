@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">BabyFind</string>
+    <string name="app_name">Baby Find</string>
+    <string name="email">Email</string>
+    <string name="name">Имя пользователя</string>
+    <string name="password">Пароль</string>
+    <string name="confirmPassword">Повторите пароль</string>
+    <string name="registration">Регистрация</string>
+    <string name="logIn">Или авторизуйтесь</string>
 </resources>

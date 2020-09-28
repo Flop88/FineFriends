@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "425503456342",
+    "firebase_url": "https://babyfind-120ae.firebaseio.com",
+    "project_id": "babyfind-120ae",
+    "storage_bucket": "babyfind-120ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425503456342:android:50e44130ee3f744bad8ff7",
+        "android_client_info": {
+          "package_name": "ru.mvlikhachev.babyfind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425503456342-hvfj0afnvmp0bleeq9rrmcuutun72bg7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.mvlikhachev.babyfind",
+            "certificate_hash": "c7076c681706c22564e74273c12c073d6d2b8df5"
+          }
+        },
+        {
+          "client_id": "425503456342-fh4p5gk03t1tjsnbjoakqf7ssn0ofohn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7pZ9OOQpCy8VLO-bsxBKb9hanciBF_uI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "425503456342-fh4p5gk03t1tjsnbjoakqf7ssn0ofohn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
