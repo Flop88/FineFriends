@@ -14,6 +14,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_login.*
+import ru.mvlikhachev.babyfind.Model.User
 import ru.mvlikhachev.babyfind.R
 import java.text.DateFormat
 import java.text.SimpleDateFormat
@@ -222,8 +223,9 @@ class LoginActivity : AppCompatActivity() {
 
         val addUser = User(uid = user?.uid, displayName = name, email =  user?.email, role = role)
 
+//        Log.d("UID", user?.uid.toString())
 
-        usersDatabaseReference.child(user!!.uid.toString()).setValue(user);
+        usersDatabaseReference.child(user?.uid.toString()).setValue(addUser);
     }
 
 
