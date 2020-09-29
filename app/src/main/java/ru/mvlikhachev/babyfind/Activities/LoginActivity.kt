@@ -46,7 +46,7 @@ class LoginActivity : AppCompatActivity() {
 
         // Если пользователь авторизован - сразу открыть мэйн активити
         if (auth.currentUser != null) {
-            startActivity(Intent(this@LoginActivity, LoginActivity::class.java))
+            startActivity(Intent(this@LoginActivity, MainActivity::class.java))
         }
 
 
@@ -67,6 +67,7 @@ class LoginActivity : AppCompatActivity() {
         toggleLoginSignUpTextView.setText("Или зарегистрируйтесь")
         textInputConfirmPassword.visibility = View.GONE
         textInputName.visibility = View.GONE
+        checkBox.visibility = View.GONE
     }
 
     private fun registarionUi() {
@@ -75,6 +76,7 @@ class LoginActivity : AppCompatActivity() {
         toggleLoginSignUpTextView.setText("Или авторизуйтесь")
         textInputConfirmPassword.visibility = View.VISIBLE
         textInputName.visibility = View.VISIBLE
+        checkBox.visibility = View.VISIBLE
     }
 
     // Validation
