@@ -25,11 +25,11 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
 
-    private val database: FirebaseDatabase = Firebase.database
+
+    private var database: FirebaseDatabase = Firebase.database
     private val usersDatabaseReference: DatabaseReference = database.reference.child("users")
 
     private var isLoginModeActive: Boolean = true
-    private var gender = "male"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -212,18 +212,18 @@ class LoginActivity : AppCompatActivity() {
 
 
     private fun createUser(user: FirebaseUser?) {
-        // 2020/02/05 03:00:00
-        val dateFormat: DateFormat = SimpleDateFormat("yyyy/MM/dd HH:mm:ss")
-        val date = Date()
 
-        var role = ""
+        var role = "test"
         if (checkBox.isChecked) role = "parent" else role = "child"
 
         val name = textInputName.editText?.text.toString().trim()
 
         val addUser = User(uid = user?.uid, displayName = name, email =  user?.email, role = role)
 
-//        Log.d("UID", user?.uid.toString())
+        Log.d("C_UID", user?.uid.toString())
+        Log.d("C_UID", name)
+        user?.email?.let { Log.d("C_UID", it) }
+        Log.d("C_UID", role)
 
         usersDatabaseReference.child(user?.uid.toString()).setValue(addUser);
     }

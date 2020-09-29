@@ -1,5 +1,13 @@
 package ru.mvlikhachev.babyfind.Model
 
-class User(uid: String?, displayName: String, email: String?, role: String) {
+import com.google.firebase.database.IgnoreExtraProperties
+
+@IgnoreExtraProperties
+data class User(
+    var uid: String?,
+    var displayName: String,
+    var email: String?,
+    var role: String
+) {
 
 }
